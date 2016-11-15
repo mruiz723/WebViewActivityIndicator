@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WebViewActivityIndicator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Roc-Cn-cde">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Rzl-pE-Qod">
+                                <rect key="frame" x="282" y="281" width="37" height="37"/>
+                                <color key="color" red="0.21272952443525628" green="1" blue="0.34038871003817972" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Roc-Cn-cde" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3p7-eq-CNn"/>
+                            <constraint firstAttribute="trailing" secondItem="Roc-Cn-cde" secondAttribute="trailing" id="5Uq-Rs-6rk"/>
+                            <constraint firstItem="Roc-Cn-cde" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="A5W-M5-lcf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Roc-Cn-cde" secondAttribute="bottom" id="J4U-7O-5G9"/>
+                            <constraint firstItem="Rzl-pE-Qod" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XHD-C7-ztj"/>
+                            <constraint firstItem="Rzl-pE-Qod" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oXf-cV-u9J"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Rzl-pE-Qod" id="sB7-6X-WX1"/>
+                        <outlet property="webView" destination="Roc-Cn-cde" id="s75-ia-88k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="387"/>
+        </scene>
+    </scenes>
+</document>
