@@ -15,14 +15,24 @@ class ViewController: UIViewController, UIWebViewDelegate {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     //MARK: - Properties
-    let urlString = "https://www.nextu.com/"
+    var type: String?
     
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let request = NSURLRequest(URL: NSURL(string:urlString)!)
-        webView.loadRequest(request)
+        if type! == url {
+            let request = NSURLRequest(URL: NSURL(string:urlString)!)
+            webView.loadRequest(request)
+        }else if type! == html {
+            webView.loadHTMLString(stringHTML, baseURL: nil)
+        }else {
+            if let path = NSBundle.mainBundle().pathForResource(pathPDF, ofType: pdf) {
+                if let data = NSFileManager.defaultManager().contentsAtPath(path) {
+                    webView.loadData(data, MIMEType: mimePDF, textEncodingName: "UTF-8", baseURL: NSURL())
+                }
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

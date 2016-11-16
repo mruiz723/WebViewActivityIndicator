@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		370440751DDCA107008BC6F1 /* WebViewOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370440741DDCA107008BC6F1 /* WebViewOptionsViewController.swift */; };
+		370440771DDCA52F008BC6F1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370440761DDCA52F008BC6F1 /* Constants.swift */; };
+		3704407B1DDCB7BA008BC6F1 /* example.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3704407A1DDCB7BA008BC6F1 /* example.pdf */; };
 		37CD2B821DDBA6E100487178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CD2B811DDBA6E100487178 /* AppDelegate.swift */; };
 		37CD2B841DDBA6E100487178 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CD2B831DDBA6E100487178 /* ViewController.swift */; };
 		37CD2B871DDBA6E100487178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37CD2B851DDBA6E100487178 /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		370440741DDCA107008BC6F1 /* WebViewOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewOptionsViewController.swift; sourceTree = "<group>"; };
+		370440761DDCA52F008BC6F1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3704407A1DDCB7BA008BC6F1 /* example.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = example.pdf; sourceTree = "<group>"; };
 		37CD2B7E1DDBA6E000487178 /* WebViewActivityIndicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewActivityIndicator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37CD2B811DDBA6E100487178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37CD2B831DDBA6E100487178 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,12 +60,15 @@
 		37CD2B801DDBA6E100487178 /* WebViewActivityIndicator */ = {
 			isa = PBXGroup;
 			children = (
+				3704407A1DDCB7BA008BC6F1 /* example.pdf */,
 				37CD2B811DDBA6E100487178 /* AppDelegate.swift */,
+				370440741DDCA107008BC6F1 /* WebViewOptionsViewController.swift */,
 				37CD2B831DDBA6E100487178 /* ViewController.swift */,
 				37CD2B851DDBA6E100487178 /* Main.storyboard */,
 				37CD2B881DDBA6E100487178 /* Assets.xcassets */,
 				37CD2B8A1DDBA6E100487178 /* LaunchScreen.storyboard */,
 				37CD2B8D1DDBA6E100487178 /* Info.plist */,
+				370440761DDCA52F008BC6F1 /* Constants.swift */,
 			);
 			path = WebViewActivityIndicator;
 			sourceTree = "<group>";
@@ -125,6 +134,7 @@
 				37CD2B8C1DDBA6E100487178 /* LaunchScreen.storyboard in Resources */,
 				37CD2B891DDBA6E100487178 /* Assets.xcassets in Resources */,
 				37CD2B871DDBA6E100487178 /* Main.storyboard in Resources */,
+				3704407B1DDCB7BA008BC6F1 /* example.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +146,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				37CD2B841DDBA6E100487178 /* ViewController.swift in Sources */,
+				370440751DDCA107008BC6F1 /* WebViewOptionsViewController.swift in Sources */,
 				37CD2B821DDBA6E100487178 /* AppDelegate.swift in Sources */,
+				370440771DDCA52F008BC6F1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +300,7 @@
 				37CD2B921DDBA6E100487178 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
