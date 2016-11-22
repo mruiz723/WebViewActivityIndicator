@@ -20,4 +20,6 @@ let stringHTML = "<html>" +
                         "<h1> Welcome to my web </h1>" +
                     "<body>" +
                 "<html>"
+let errorTitle = "Error"
+let okTitle = "OK"
 

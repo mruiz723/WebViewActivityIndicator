@@ -52,6 +52,13 @@ class ViewController: UIViewController, UIWebViewDelegate {
     
     func webView(webView: UIWebView, didFailLoadWithError error: NSError?) {
         print(error?.localizedDescription)
+        activityIndicator.stopAnimating()
+        let alertController = UIAlertController(title: errorTitle, message: error?.localizedDescription, preferredStyle: .Alert)
+        let oKAction = UIAlertAction(title: okTitle, style: .Destructive) { (action) in
+            self.navigationController?.popViewControllerAnimated(true)
+        }
+        alertController.addAction(oKAction)
+        presentViewController(alertController, animated: true, completion:nil)
     }
 }
 
